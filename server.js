@@ -16,6 +16,7 @@ app.use("/", (req, res) => {
   res.send("Hello world");
 });
 
-app.listen(PORT, () => {
-  console.log(`Your project is running on http://localhost:${PORT}/`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Your project is running on port ${PORT}`);
 });
+
