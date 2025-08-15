@@ -25,7 +25,16 @@ const Book = mongoose.Schema({
   },
   inStock: {
     type: Boolean,
+    default:true,
     required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  cloudinary_id: {
+    type: String,
   },
 });
 
